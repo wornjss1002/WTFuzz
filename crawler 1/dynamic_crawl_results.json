@@ -1,0 +1,3490 @@
+{
+  "crawled_at": "2025-10-05T19:45:41.286314",
+  "target": "http://192.168.204.128/dvwa/",
+  "statistics": {
+    "pages_visited": 24,
+    "total_links": 109,
+    "total_forms": 13,
+    "total_endpoints": 40,
+    "network_requests": 180,
+    "ajax_requests": 2,
+    "total_clicked_elements": 32,
+    "total_skipped_elements": 0
+  },
+  "visited_urls": [
+    "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+    "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+    "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+    "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+    "http://192.168.204.128/dvwa/security.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+    "http://192.168.204.128/dvwa/about.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/javascript/",
+    "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php",
+    "http://192.168.204.128/dvwa/",
+    "http://192.168.204.128/dvwa/vulnerabilities/api/",
+    "http://192.168.204.128/dvwa/instructions.php",
+    "http://192.168.204.128/dvwa/phpinfo.php",
+    "http://192.168.204.128/dvwa/#",
+    "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+    "http://192.168.204.128/dvwa/setup.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+    "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+    "http://192.168.204.128/dvwa/vulnerabilities/authbypass/",
+    "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+    "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+    "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/",
+    "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+    "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+  ],
+  "endpoints": [
+    {
+      "url": "http://192.168.204.128/dvwa/setup.php#",
+      "method": "POST",
+      "page_url": "http://192.168.204.128/dvwa/setup.php",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "create_db",
+          "type": "submit",
+          "location": "body",
+          "default_value": "Create / Reset Database",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "body",
+          "default_value": "a19e675b5300b4916f0a7b0e5bfa9b1c",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/#",
+      "method": "POST",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "ip",
+          "type": "text",
+          "location": "body",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "location": "body",
+          "default_value": "Submit",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "body",
+          "default_value": "cdc2c5a33d5417faca5507985bc0a1a0",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/#",
+      "method": "GET",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "password_current",
+          "type": "password",
+          "location": "query",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "password_new",
+          "type": "password",
+          "location": "query",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "password_conf",
+          "type": "password",
+          "location": "query",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "Change",
+          "type": "submit",
+          "location": "query",
+          "default_value": "Change",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "query",
+          "default_value": "5cc9644448cb352c2d44e1a723f975d0",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/#",
+      "method": "POST",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "MAX_FILE_SIZE",
+          "type": "hidden",
+          "location": "body",
+          "default_value": "100000",
+          "required": false
+        },
+        {
+          "name": "uploaded",
+          "type": "file",
+          "location": "body",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "Upload",
+          "type": "submit",
+          "location": "body",
+          "default_value": "Upload",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "body",
+          "default_value": "38ace1a199e92ead6ab08438ef0e41ce",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/#",
+      "method": "GET",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "text",
+          "location": "query",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "location": "query",
+          "default_value": "Submit",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "query",
+          "default_value": "3666f309259357ebf9f82671828df37b",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/#",
+      "method": "GET",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "text",
+          "location": "query",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "location": "query",
+          "default_value": "Submit",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "query",
+          "default_value": "799c0449ba1035bd0ede8ab819739c0a",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "method": "POST",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "source": "dynamic_form",
+      "parameters": []
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "method": "GET",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "default",
+          "type": "select-one",
+          "location": "query",
+          "default_value": "English",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/#",
+      "method": "GET",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "text",
+          "location": "query",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "query",
+          "default_value": "8761355fe6f8926ca56d895d30136572",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "method": "POST",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "txtName",
+          "type": "text",
+          "location": "body",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "mtxMessage",
+          "type": "textarea",
+          "location": "body",
+          "default_value": "",
+          "required": false
+        },
+        {
+          "name": "btnSign",
+          "type": "submit",
+          "location": "body",
+          "default_value": "Sign Guestbook",
+          "required": false
+        },
+        {
+          "name": "btnClear",
+          "type": "submit",
+          "location": "body",
+          "default_value": "Clear Guestbook",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "body",
+          "default_value": "090f996763bbc86a8793426fab6998cf",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "method": "POST",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "source": "dynamic_form",
+      "parameters": []
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "method": "GET",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "token",
+          "type": "textarea",
+          "location": "query",
+          "default_value": "{\"token\":\"FDjwEBygMzxCrWSj7Y3JYPjs+z+JhKaw\",\"iv\":\"w2fyhentW+SNRM2c\"}",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/security.php#",
+      "method": "POST",
+      "page_url": "http://192.168.204.128/dvwa/security.php",
+      "source": "dynamic_form",
+      "parameters": [
+        {
+          "name": "security",
+          "type": "select-one",
+          "location": "body",
+          "default_value": "impossible",
+          "required": false
+        },
+        {
+          "name": "seclev_submit",
+          "type": "submit",
+          "location": "body",
+          "default_value": "Submit",
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "location": "body",
+          "default_value": "64d7361e063cf0595cbfb412e5f84f87",
+          "required": false
+        }
+      ]
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/login.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/login.php",
+      "method": "POST",
+      "parameters": [
+        {
+          "name": "username",
+          "type": "form",
+          "location": "body",
+          "example_value": "admin",
+          "required": true
+        },
+        {
+          "name": "password",
+          "type": "form",
+          "location": "body",
+          "example_value": "password",
+          "required": true
+        },
+        {
+          "name": "Login",
+          "type": "form",
+          "location": "body",
+          "example_value": "Login",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "form",
+          "location": "body",
+          "example_value": "a23b74353d99755ee83b8905a351ebc1",
+          "required": true
+        }
+      ],
+      "source": "network_capture",
+      "status": 302,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/index.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/instructions.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/setup.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "method": "POST",
+      "parameters": [
+        {
+          "name": "username",
+          "type": "form",
+          "location": "body",
+          "example_value": "testuser",
+          "required": true
+        },
+        {
+          "name": "password",
+          "type": "form",
+          "location": "body",
+          "example_value": "Test123!",
+          "required": true
+        },
+        {
+          "name": "Login",
+          "type": "form",
+          "location": "body",
+          "example_value": "Login",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "form",
+          "location": "body",
+          "example_value": "dbbbcbd974218a451ef39b01069acf8a",
+          "required": true
+        }
+      ],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "method": "POST",
+      "parameters": [
+        {
+          "name": "ip",
+          "type": "form",
+          "location": "body",
+          "example_value": "test",
+          "required": true
+        },
+        {
+          "name": "Submit",
+          "type": "form",
+          "location": "body",
+          "example_value": "Submit",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "form",
+          "location": "body",
+          "example_value": "3f1f2d634666130894e14c5f745b2218",
+          "required": true
+        }
+      ],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/fi/",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "page",
+          "type": "query",
+          "location": "query",
+          "example_value": "include.php",
+          "required": true
+        }
+      ],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/javascript/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/get_user_data.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/api/",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/security.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/phpinfo.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/about.php",
+      "method": "GET",
+      "parameters": [],
+      "source": "network_capture",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8"
+    }
+  ],
+  "forms": [
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/setup.php#",
+      "method": "post",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "create_db",
+          "type": "submit",
+          "id": null,
+          "value": "Create / Reset Database",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "a19e675b5300b4916f0a7b0e5bfa9b1c",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/exec/#",
+      "method": "post",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "ip",
+          "type": "text",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "id": null,
+          "value": "Submit",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "cdc2c5a33d5417faca5507985bc0a1a0",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/csrf/#",
+      "method": "get",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "password_current",
+          "type": "password",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "password_new",
+          "type": "password",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "password_conf",
+          "type": "password",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "Change",
+          "type": "submit",
+          "id": null,
+          "value": "Change",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "5cc9644448cb352c2d44e1a723f975d0",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/upload/#",
+      "method": "post",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "MAX_FILE_SIZE",
+          "type": "hidden",
+          "id": null,
+          "value": "100000",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "uploaded",
+          "type": "file",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "Upload",
+          "type": "submit",
+          "id": null,
+          "value": "Upload",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "38ace1a199e92ead6ab08438ef0e41ce",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/sqli/#",
+      "method": "get",
+      "id": "ref: <Node>",
+      "class": null,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "text",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "id": null,
+          "value": "Submit",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "3666f309259357ebf9f82671828df37b",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/#",
+      "method": "get",
+      "id": "ref: <Node>",
+      "class": null,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "text",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "id": null,
+          "value": "Submit",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "799c0449ba1035bd0ede8ab819739c0a",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "method": "post",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": null,
+          "type": "submit",
+          "id": null,
+          "value": "Generate",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "method": "get",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "default",
+          "type": "select-one",
+          "id": null,
+          "value": "English",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": null,
+          "type": "submit",
+          "id": null,
+          "value": "Select",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/#",
+      "method": "get",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "text",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": null,
+          "type": "submit",
+          "id": null,
+          "value": "Submit",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "8761355fe6f8926ca56d895d30136572",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "method": "post",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "txtName",
+          "type": "text",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "mtxMessage",
+          "type": "textarea",
+          "id": null,
+          "value": "",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "btnSign",
+          "type": "submit",
+          "id": null,
+          "value": "Sign Guestbook",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "btnClear",
+          "type": "submit",
+          "id": null,
+          "value": "Clear Guestbook",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "090f996763bbc86a8793426fab6998cf",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "method": "post",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": null,
+          "type": "button",
+          "id": "solve",
+          "value": "Solve the sum",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "method": "get",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "token",
+          "type": "textarea",
+          "id": "token",
+          "value": "{\"token\":\"FDjwEBygMzxCrWSj7Y3JYPjs+z+JhKaw\",\"iv\":\"w2fyhentW+SNRM2c\"}",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": null,
+          "type": "button",
+          "id": null,
+          "value": "Submit",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "action": "http://192.168.204.128/dvwa/security.php#",
+      "method": "post",
+      "id": null,
+      "class": null,
+      "inputs": [
+        {
+          "name": "security",
+          "type": "select-one",
+          "id": null,
+          "value": "impossible",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "seclev_submit",
+          "type": "submit",
+          "id": null,
+          "value": "Submit",
+          "placeholder": null,
+          "required": false
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "id": null,
+          "value": "64d7361e063cf0595cbfb412e5f84f87",
+          "placeholder": null,
+          "required": false
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "http://192.168.204.128/dvwa/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/",
+      "text": "Home",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php",
+      "text": "Instructions",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/setup.php",
+      "text": "Setup / Reset DB",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "text": "Brute Force",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "text": "Command Injection",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "text": "CSRF",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php",
+      "text": "File Inclusion",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+      "text": "File Upload",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "text": "SQL Injection",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "text": "SQL Injection (Blind)",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "text": "Weak Session IDs",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "text": "XSS (DOM)",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "text": "XSS (Reflected)",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "text": "XSS (Stored)",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "text": "CSP Bypass",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/javascript/",
+      "text": "JavaScript",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/",
+      "text": "Authorisation Bypass",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/",
+      "text": "Open HTTP Redirect",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "text": "Cryptography",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/api/",
+      "text": "API",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/security.php",
+      "text": "DVWA Security",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php",
+      "text": "PHP Info",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/about.php",
+      "text": "About",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php?doc=readme",
+      "text": "Read Me",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php?doc=PDF",
+      "text": "PDF Guide",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php?doc=changelog",
+      "text": "Change Log",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php?doc=copying",
+      "text": "Copying",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.ar.md",
+      "text": "العربية",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.zh.md",
+      "text": "简体中文",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.fr.md",
+      "text": "Français",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.ko.md",
+      "text": "한국어",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.fa.md",
+      "text": "فارسی",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.pl.md",
+      "text": "Polski",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.pt.md",
+      "text": "Português",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.es.md",
+      "text": "Español",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.tr.md",
+      "text": "Türkçe",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.id.md",
+      "text": "Indonesia",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.vi.md",
+      "text": "Vietnamese",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/README.it.md",
+      "text": "Italiano",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php#download",
+      "text": "Download",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php#i-want-to-run-dvwa-on-a-different-port",
+      "text": "I want to run DVWA on a different port",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/config/config.inc.php.dist",
+      "text": "config/config.inc.php.dist",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/compose.yml",
+      "text": "compose.yml",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php#php-configuration",
+      "text": "PHP Configuration",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/instructions.php#database-setup",
+      "text": "Database Setup",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/setup.php#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/exec/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/csrf/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file1.php",
+      "text": "file1.php",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file2.php",
+      "text": "file2.php",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file3.php",
+      "text": "file3.php",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/upload/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/sqli/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/csp/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/javascript/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/source/impossible.php?redirect=1",
+      "text": "Quote 1",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/source/impossible.php?redirect=2",
+      "text": "Quote 2",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/vulnerabilities/api/#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/security.php#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_apache2handler",
+      "text": "apache2handler",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_calendar",
+      "text": "calendar",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_core",
+      "text": "Core",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_ctype",
+      "text": "ctype",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_date",
+      "text": "date",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_exif",
+      "text": "exif",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_ffi",
+      "text": "FFI",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_fileinfo",
+      "text": "fileinfo",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_filter",
+      "text": "filter",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_ftp",
+      "text": "ftp",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_gettext",
+      "text": "gettext",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_hash",
+      "text": "hash",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_iconv",
+      "text": "iconv",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_json",
+      "text": "json",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_libxml",
+      "text": "libxml",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_mysqli",
+      "text": "mysqli",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_mysqlnd",
+      "text": "mysqlnd",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_openssl",
+      "text": "openssl",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_pcre",
+      "text": "pcre",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_pdo",
+      "text": "PDO",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_pdo_mysql",
+      "text": "pdo_mysql",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_phar",
+      "text": "Phar",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_posix",
+      "text": "posix",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_random",
+      "text": "random",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_readline",
+      "text": "readline",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_reflection",
+      "text": "Reflection",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_session",
+      "text": "session",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_shmop",
+      "text": "shmop",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_sockets",
+      "text": "sockets",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_sodium",
+      "text": "sodium",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_spl",
+      "text": "SPL",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_standard",
+      "text": "standard",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_sysvmsg",
+      "text": "sysvmsg",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_sysvsem",
+      "text": "sysvsem",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_sysvshm",
+      "text": "sysvshm",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_tokenizer",
+      "text": "tokenizer",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_zend+opcache",
+      "text": "Zend OPcache",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/phpinfo.php#module_zlib",
+      "text": "zlib",
+      "id": null,
+      "class": null,
+      "target": null,
+      "rel": null
+    },
+    {
+      "href": "http://192.168.204.128/dvwa/about.php#",
+      "text": "",
+      "id": null,
+      "class": "theme-icon",
+      "target": null,
+      "rel": null
+    }
+  ],
+  "interaction_results": [
+    {
+      "page_url": "http://192.168.204.128/dvwa/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/#",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/instructions.php",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/setup.php",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": [
+        "폼 제출 실패 #0: Locator.click: Timeout 3000ms exceeded.\nCall log:\n"
+      ]
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        },
+        {
+          "type": "form",
+          "action": "#",
+          "method": "POST",
+          "filled_fields": [
+            "ip=test"
+          ]
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "clicked_elements": [
+        {
+          "type": "button",
+          "text": "test credentials",
+          "id": "",
+          "index": 0
+        },
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        },
+        {
+          "type": "form",
+          "action": "#",
+          "method": "GET",
+          "filled_fields": [
+            "password_current=Test123!",
+            "password_new=Test123!",
+            "password_conf=Test123!"
+          ]
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        },
+        {
+          "type": "form",
+          "action": "#",
+          "method": "GET",
+          "filled_fields": [
+            "id=test"
+          ]
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        },
+        {
+          "type": "form",
+          "action": "#",
+          "method": "GET",
+          "filled_fields": [
+            "id=test"
+          ]
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "clicked_elements": [
+        {
+          "type": "select",
+          "name": "default",
+          "value": "French",
+          "text": "French"
+        },
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        },
+        {
+          "type": "form",
+          "action": "#",
+          "method": "GET",
+          "filled_fields": [
+            "name=test"
+          ]
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        },
+        {
+          "type": "form",
+          "action": "current_page",
+          "method": "POST",
+          "filled_fields": [
+            "txtName=test",
+            "mtxMessage=25"
+          ]
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/javascript/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": [
+        "폼 제출 실패 #0: Locator.click: Timeout 3000ms exceeded.\nCall log:\n"
+      ]
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/api/",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/security.php",
+      "clicked_elements": [
+        {
+          "type": "select",
+          "name": "security",
+          "value": "medium",
+          "text": "Medium"
+        },
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    },
+    {
+      "page_url": "http://192.168.204.128/dvwa/about.php",
+      "clicked_elements": [
+        {
+          "type": "js_link",
+          "text": "",
+          "href": "#",
+          "has_onclick": true
+        }
+      ],
+      "skipped_elements": [],
+      "errors": []
+    }
+  ],
+  "network_capture": {
+    "ajax_requests": [
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/get_user_data.php",
+        "method": "GET",
+        "type": "xhr",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:45:18.667996",
+        "is_api_call": false,
+        "accepts_json": false
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/get_user_data.php",
+        "method": "GET",
+        "type": "xhr",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:45:20.975340",
+        "is_api_call": false,
+        "accepts_json": false
+      }
+    ],
+    "all_requests": [
+      {
+        "url": "http://192.168.204.128/dvwa/login.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:02.701174"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/login.php",
+        "method": "POST",
+        "resource_type": "document",
+        "headers": {
+          "content-type": "application/x-www-form-urlencoded",
+          "origin": "http://192.168.204.128",
+          "referer": "http://192.168.204.128/dvwa/login.php",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": "username=admin&password=password&Login=Login&user_token=a23b74353d99755ee83b8905a351ebc1",
+        "timestamp": "2025-10-05T19:44:10.931343"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/index.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "content-type": "application/x-www-form-urlencoded",
+          "origin": "http://192.168.204.128",
+          "referer": "http://192.168.204.128/dvwa/login.php",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:10.977733"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/index.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:11.041104"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/index.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:11.051039"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:11.650839"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:11.682868"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:11.695928"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:13.937052"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:13.954896"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:13.968403"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/instructions.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:16.152556"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/instructions.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:16.186515"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/instructions.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:16.197590"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/instructions.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:19.227947"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/instructions.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:19.248780"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/instructions.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:19.256148"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/setup.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:19.809650"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/setup.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:20.111244"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/setup.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:20.117751"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/setup.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:22.392998"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/setup.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:22.583604"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/setup.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:22.590367"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:23.159236"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:23.183151"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:23.186730"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:25.353332"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:25.374228"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:25.378016"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+        "method": "POST",
+        "resource_type": "document",
+        "headers": {
+          "content-type": "application/x-www-form-urlencoded",
+          "origin": "http://192.168.204.128",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": "username=testuser&password=Test123%21&Login=Login&user_token=dbbbcbd974218a451ef39b01069acf8a",
+        "timestamp": "2025-10-05T19:44:26.033015"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:30.073868"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:30.076916"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:30.078658"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:30.097854"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:30.102339"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:32.265350"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:32.287949"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:32.292541"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+        "method": "POST",
+        "resource_type": "document",
+        "headers": {
+          "content-type": "application/x-www-form-urlencoded",
+          "origin": "http://192.168.204.128",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": "ip=test&Submit=Submit&user_token=3f1f2d634666130894e14c5f745b2218",
+        "timestamp": "2025-10-05T19:44:32.931794"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:32.952614"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:32.956704"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:34.469404"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:34.493802"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:34.497599"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:35.018670"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:35.039643"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:35.045396"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:38.305228"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:38.327007"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:38.328964"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/?password_current=Test123%21&password_new=Test123%21&password_conf=Test123%21&Change=Change&user_token=e42a4c9bc19d7d3266e81513115b1647",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:39.048247"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/?password_current=Test123%21&password_new=Test123%21&password_conf=Test123%21&Change=Change&user_token=e42a4c9bc19d7d3266e81513115b1647"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:39.077002"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/?password_current=Test123%21&password_new=Test123%21&password_conf=Test123%21&Change=Change&user_token=e42a4c9bc19d7d3266e81513115b1647"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:39.081615"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:40.585021"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:40.619891"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:40.637870"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:41.147166"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:41.176504"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:41.180081"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:43.359564"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:43.429943"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:43.432489"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:43.973304"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/upload/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:44.007714"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/upload/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:44.011202"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:46.173063"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/upload/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:46.199856"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/upload/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:46.205381"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:46.798309"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:46.823347"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:46.827212"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:49.001962"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:49.026658"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:49.031416"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/?id=test&Submit=Submit&user_token=d905f549d1c186222e660ec5b64289cd",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:49.681319"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/?id=test&Submit=Submit&user_token=d905f549d1c186222e660ec5b64289cd"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:49.704464"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/?id=test&Submit=Submit&user_token=d905f549d1c186222e660ec5b64289cd"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:49.707303"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:51.222105"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:51.243254"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:51.246117"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:51.775302"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:51.797780"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:51.802897"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:53.945310"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:53.971603"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:53.977840"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/?id=test&Submit=Submit&user_token=8bcf6660352097f3b929fe4e773f58bc",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:54.613215"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/?id=test&Submit=Submit&user_token=8bcf6660352097f3b929fe4e773f58bc"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:54.634676"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/?id=test&Submit=Submit&user_token=8bcf6660352097f3b929fe4e773f58bc"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:54.637056"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:56.149187"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:56.172219"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:56.176450"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:56.701817"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:56.725035"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:56.728043"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:58.893477"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:58.913597"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:58.917883"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+        "method": "GET",
+        "resource_type": "document",
+        "headers": {
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:59.463310"
+      },
+      {
+        "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+        "method": "GET",
+        "resource_type": "script",
+        "headers": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/"
+        },
+        "post_data": null,
+        "timestamp": "2025-10-05T19:44:59.485073"
+      }
+    ]
+  },
+  "session": {
+    "cookies": {
+      "security": "impossible",
+      "PHPSESSID": "v1c3ofs4l5uutjp509umttcpjo",
+      "theme": "light"
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  }
+}
