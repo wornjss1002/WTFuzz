@@ -8,50 +8,37 @@ Playwright 기반 XSS 탐지 엔진
 import asyncio
 import hashlib
 import base64
+import sys
 from dataclasses import dataclass, field
-from typing import List, Dict, Optional, Any
+from typing import List, Dict, Optional, Any, TYPE_CHECKING
 from enum import Enum
 from datetime import datetime
+from pathlib import Path
+
+# 공통 모델 import
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
+from common.models import ConfidenceLevel, DetectionEvidence
+
+if TYPE_CHECKING:
+    from playwright.async_api import Browser, Page, BrowserContext
 
 try:
     from playwright.async_api import async_playwright, Browser, Page, BrowserContext
 except ImportError:
     print("경고: Playwright가 설치되지 않았습니다. 'pip install playwright'로 설치해주세요.")
+    Browser = Any  # type: ignore
+    Page = Any  # type: ignore
+    BrowserContext = Any  # type: ignore
 
 
 class DetectionMethod(Enum):
-    """탐지 방법"""
+    """탐지 방법 (Detection Engine 전용)"""
     CONSOLE = "console"
     DIALOG = "dialog"
     DOM_MUTATION = "dom_mutation"
     EXECUTION_CONTEXT = "execution_context"
     CSP_VIOLATION = "csp_violation"
     NETWORK_ACTIVITY = "network_activity"
-
-
-class ConfidenceLevel(Enum):
-    """신뢰도 레벨"""
-    HIGH = "HIGH"        # 90-100%
-    MEDIUM = "MEDIUM"    # 60-89%
-    LOW = "LOW"          # 30-59%
-    FALSE = "FALSE"      # 0-29%
-
-
-@dataclass
-class DetectionEvidence:
-    """탐지 증거"""
-    method: DetectionMethod
-    triggered: bool
-    data: Any = None
-    timestamp: datetime = field(default_factory=datetime.now)
-
-    def to_dict(self) -> Dict:
-        return {
-            'method': self.method.value,
-            'triggered': self.triggered,
-            'data': str(self.data) if self.data else None,
-            'timestamp': self.timestamp.isoformat()
-        }
 
 
 @dataclass
@@ -273,7 +260,7 @@ class DetectionEngine:
         )
 
         return DetectionEvidence(
-            method=DetectionMethod.CONSOLE,
+            method=DetectionMethod.CONSOLE.value,
             triggered=triggered,
             data=console_messages if triggered else None
         )
@@ -293,7 +280,7 @@ class DetectionEngine:
         page.on('dialog', on_dialog)
 
         return DetectionEvidence(
-            method=DetectionMethod.DIALOG,
+            method=DetectionMethod.DIALOG.value,
             triggered=dialog_triggered['value'],
             data=dialog_triggered['data']
         )
@@ -312,7 +299,7 @@ class DetectionEngine:
         await asyncio.sleep(0.5)
 
         return DetectionEvidence(
-            method=DetectionMethod.CSP_VIOLATION,
+            method=DetectionMethod.CSP_VIOLATION.value,
             triggered=len(csp_violations) > 0,
             data=csp_violations if csp_violations else None
         )
@@ -335,7 +322,7 @@ class DetectionEngine:
         await asyncio.sleep(0.5)
 
         return DetectionEvidence(
-            method=DetectionMethod.NETWORK_ACTIVITY,
+            method=DetectionMethod.NETWORK_ACTIVITY.value,
             triggered=len(suspicious_requests) > 0,
             data=suspicious_requests if suspicious_requests else None
         )
@@ -353,13 +340,13 @@ class DetectionEngine:
             """)
 
             return DetectionEvidence(
-                method=DetectionMethod.DOM_MUTATION,
+                method=DetectionMethod.DOM_MUTATION.value,
                 triggered=result,
                 data={'marker_found': result}
             )
         except Exception as e:
             return DetectionEvidence(
-                method=DetectionMethod.DOM_MUTATION,
+                method=DetectionMethod.DOM_MUTATION.value,
                 triggered=False,
                 data={'error': str(e)}
             )
@@ -380,13 +367,13 @@ class DetectionEngine:
             """)
 
             return DetectionEvidence(
-                method=DetectionMethod.EXECUTION_CONTEXT,
+                method=DetectionMethod.EXECUTION_CONTEXT.value,
                 triggered=result,
                 data={'execution_confirmed': result}
             )
         except Exception as e:
             return DetectionEvidence(
-                method=DetectionMethod.EXECUTION_CONTEXT,
+                method=DetectionMethod.EXECUTION_CONTEXT.value,
                 triggered=False,
                 data={'error': str(e)}
             )
