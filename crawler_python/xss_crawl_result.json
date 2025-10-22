@@ -1,0 +1,3619 @@
+{
+  "base_url": "http://192.168.204.128/dvwa/",
+  "start_time": "2025-10-22T16:19:47.621305",
+  "end_time": "2025-10-22T16:22:23.704232",
+  "statistics": {
+    "total_urls": 44,
+    "total_forms": 14,
+    "total_endpoints": 30,
+    "total_injection_points": 48,
+    "form_injection_points": 19,
+    "url_param_injection_points": 14,
+    "post_param_injection_points": 14,
+    "file_upload_injection_points": 1,
+    "pages_with_csp": 0,
+    "vulnerable_cookies": 24,
+    "total_sensitive_data": 8,
+    "sensitive_data_by_type": {
+      "email": 1,
+      "phone": 0,
+      "credit_card": 0,
+      "ssn": 1,
+      "api_key": 0,
+      "jwt": 0,
+      "internal_ip": 6,
+      "storage": 0,
+      "data_attribute": 0,
+      "table_data": 0
+    }
+  },
+  "crawled_urls": [
+    "http://192.168.204.128/dvwa/",
+    "http://192.168.204.128/dvwa/instructions.php",
+    "http://192.168.204.128/dvwa/setup.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+    "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+    "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+    "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+    "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+    "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+    "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+    "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+    "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+    "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+    "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+    "http://192.168.204.128/dvwa/vulnerabilities/javascript/",
+    "http://192.168.204.128/dvwa/vulnerabilities/authbypass/",
+    "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/",
+    "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+    "http://192.168.204.128/dvwa/vulnerabilities/api/",
+    "http://192.168.204.128/dvwa/security.php",
+    "http://192.168.204.128/dvwa/phpinfo.php",
+    "http://192.168.204.128/dvwa/about.php",
+    "http://192.168.204.128/dvwa/instructions.php?doc=readme",
+    "http://192.168.204.128/dvwa/instructions.php?doc=PDF",
+    "http://192.168.204.128/dvwa/instructions.php?doc=changelog",
+    "http://192.168.204.128/dvwa/instructions.php?doc=copying",
+    "http://192.168.204.128/dvwa/README.ar.md",
+    "http://192.168.204.128/dvwa/README.zh.md",
+    "http://192.168.204.128/dvwa/README.fr.md",
+    "http://192.168.204.128/dvwa/README.ko.md",
+    "http://192.168.204.128/dvwa/README.fa.md",
+    "http://192.168.204.128/dvwa/README.pl.md",
+    "http://192.168.204.128/dvwa/README.pt.md",
+    "http://192.168.204.128/dvwa/README.es.md",
+    "http://192.168.204.128/dvwa/README.tr.md",
+    "http://192.168.204.128/dvwa/README.id.md",
+    "http://192.168.204.128/dvwa/README.vi.md",
+    "http://192.168.204.128/dvwa/README.it.md",
+    "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file1.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file2.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file3.php",
+    "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/source/impossible.php?redirect=1",
+    "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/source/impossible.php?redirect=2"
+  ],
+  "forms": [
+    {
+      "action": "http://192.168.204.128/dvwa/setup.php#",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "b016cfdfe9074e2b2785c9c0431a5a13",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "create_db",
+          "type": "submit",
+          "value": "Create / Reset Database",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Create / Reset Database",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "b016cfdfe9074e2b2785c9c0431a5a13",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "b016cfdfe9074e2b2785c9c0431a5a13",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/brute/#",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "da0788c98bee551f79189359c8bd0503",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "username",
+          "type": "text",
+          "value": "",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "admin",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "password",
+          "type": "password",
+          "value": "",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "password123",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "Login",
+          "type": "submit",
+          "value": "Login",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Login",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "da0788c98bee551f79189359c8bd0503",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "da0788c98bee551f79189359c8bd0503",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/exec/#",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "ping",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "d2fcbd97fedaa9bd822b58ad4dc05a9a",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "ip",
+          "type": "text",
+          "value": "",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "127.0.0.1",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "value": "Submit",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Submit",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "d2fcbd97fedaa9bd822b58ad4dc05a9a",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "d2fcbd97fedaa9bd822b58ad4dc05a9a",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/csrf/#",
+      "method": "GET",
+      "form_id": "form_0",
+      "form_name": "",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "cb9f5987a4ae528e99f9cb8c2d7cd61c",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "password_current",
+          "type": "password",
+          "value": "",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "password123",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "password_new",
+          "type": "password",
+          "value": "",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "password123",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "password_conf",
+          "type": "password",
+          "value": "",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "password123",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "Change",
+          "type": "submit",
+          "value": "Change",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Change",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "cb9f5987a4ae528e99f9cb8c2d7cd61c",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "cb9f5987a4ae528e99f9cb8c2d7cd61c",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/upload/#",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "",
+      "enctype": "multipart/form-data",
+      "has_file_upload": true,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "7ed05dbcd54885fe6763e586859f2bbd",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": [
+          {
+            "name": "MAX_FILE_SIZE",
+            "value": "100000",
+            "length": 6,
+            "token_type": "other"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "name": "MAX_FILE_SIZE",
+          "type": "hidden",
+          "value": "100000",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "100000",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "uploaded",
+          "type": "file",
+          "value": "",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": true,
+          "test_value": "test.txt",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "Upload",
+          "type": "submit",
+          "value": "Upload",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Upload",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "7ed05dbcd54885fe6763e586859f2bbd",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "7ed05dbcd54885fe6763e586859f2bbd",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/sqli/#",
+      "method": "GET",
+      "form_id": "ref: <Node>",
+      "form_name": "",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "35cfac22c23e44fd6942a47e3d831e06",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "value": "",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "1",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "value": "Submit",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Submit",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "35cfac22c23e44fd6942a47e3d831e06",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "35cfac22c23e44fd6942a47e3d831e06",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/#",
+      "method": "GET",
+      "form_id": "ref: <Node>",
+      "form_name": "",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "c5c973e6ac5010b0b55e6ac529a6417f",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "value": "",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "1",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "Submit",
+          "type": "submit",
+          "value": "Submit",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Submit",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "c5c973e6ac5010b0b55e6ac529a6417f",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "c5c973e6ac5010b0b55e6ac529a6417f",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "field_0",
+          "type": "submit",
+          "value": "Generate",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Generate",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "method": "GET",
+      "form_id": "form_0",
+      "form_name": "XSS",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "default",
+          "type": "select-one",
+          "value": "English",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "English",
+          "options": [
+            "English",
+            "French",
+            "Spanish",
+            "German"
+          ],
+          "selected_value": "English"
+        },
+        {
+          "name": "field_1",
+          "type": "submit",
+          "value": "Select",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Select",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/#",
+      "method": "GET",
+      "form_id": "form_0",
+      "form_name": "ref: <Node>",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "55eb95e841153e03c8e888a8e807e2aa",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "value": "",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "John Doe",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "field_1",
+          "type": "submit",
+          "value": "Submit",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Submit",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "55eb95e841153e03c8e888a8e807e2aa",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "55eb95e841153e03c8e888a8e807e2aa",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "guestform",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "e750f6b6637cbef30fda42559d5b8f58",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "txtName",
+          "type": "text",
+          "value": "",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "John Doe",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "mtxMessage",
+          "type": "textarea",
+          "value": "",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "Hello World",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "btnSign",
+          "type": "submit",
+          "value": "Sign Guestbook",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Sign Guestbook",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "btnClear",
+          "type": "submit",
+          "value": "Clear Guestbook",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Clear Guestbook",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "e750f6b6637cbef30fda42559d5b8f58",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "e750f6b6637cbef30fda42559d5b8f58",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "csp",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "solve",
+          "type": "button",
+          "value": "Solve the sum",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Solve the sum",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "method": "GET",
+      "form_id": "form_0",
+      "form_name": "check_token",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "token",
+          "type": "textarea",
+          "value": "{\"token\":\"kwD2VWDBMErkRI1C8pncAFiy9KVbG6rK\",\"iv\":\"KbydwdheZ4a+MubJ\"}",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "{\"token\":\"kwD2VWDBMErkRI1C8pncAFiy9KVbG6rK\",\"iv\":\"KbydwdheZ4a+MubJ\"}",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "field_1",
+          "type": "button",
+          "value": "Submit",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Submit",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    },
+    {
+      "action": "http://192.168.204.128/dvwa/security.php#",
+      "method": "POST",
+      "form_id": "form_0",
+      "form_name": "",
+      "enctype": "application/x-www-form-urlencoded",
+      "has_file_upload": false,
+      "hidden_fields_analysis": {
+        "csrf_tokens": [
+          {
+            "name": "user_token",
+            "value": "c17d248a15d3764c4183ad01d15cd287",
+            "length": 32,
+            "token_type": "csrf",
+            "pattern": "alphanumeric"
+          }
+        ],
+        "other_hidden": []
+      },
+      "fields": [
+        {
+          "name": "security",
+          "type": "select-one",
+          "value": "impossible",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "impossible",
+          "options": [
+            "low",
+            "medium",
+            "high",
+            "impossible"
+          ],
+          "selected_value": "impossible"
+        },
+        {
+          "name": "seclev_submit",
+          "type": "submit",
+          "value": "Submit",
+          "required": false,
+          "injectable": false,
+          "is_file_upload": false,
+          "test_value": "Submit",
+          "options": null,
+          "selected_value": null
+        },
+        {
+          "name": "user_token",
+          "type": "hidden",
+          "value": "c17d248a15d3764c4183ad01d15cd287",
+          "required": false,
+          "injectable": true,
+          "is_file_upload": false,
+          "test_value": "c17d248a15d3764c4183ad01d15cd287",
+          "options": null,
+          "selected_value": null
+        }
+      ]
+    }
+  ],
+  "endpoints": [
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "method": "POST",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "username",
+          "type": "form",
+          "location": "body",
+          "example_value": "admin",
+          "required": true
+        },
+        {
+          "name": "password",
+          "type": "form",
+          "location": "body",
+          "example_value": "password123",
+          "required": true
+        },
+        {
+          "name": "Login",
+          "type": "form",
+          "location": "body",
+          "example_value": "Login",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "form",
+          "location": "body",
+          "example_value": "da0788c98bee551f79189359c8bd0503",
+          "required": true
+        }
+      ],
+      "post_data": "username=admin&password=password123&Login=Login&user_token=da0788c98bee551f79189359c8bd0503",
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "origin": "http://192.168.204.128",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:13.123058"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:17.215058"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/brute/"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:17.224933"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:17.255688"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "method": "POST",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "ip",
+          "type": "form",
+          "location": "body",
+          "example_value": "127.0.0.1",
+          "required": true
+        },
+        {
+          "name": "Submit",
+          "type": "form",
+          "location": "body",
+          "example_value": "Submit",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "form",
+          "location": "body",
+          "example_value": "d2fcbd97fedaa9bd822b58ad4dc05a9a",
+          "required": true
+        }
+      ],
+      "post_data": "ip=127.0.0.1&Submit=Submit&user_token=d2fcbd97fedaa9bd822b58ad4dc05a9a",
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "origin": "http://192.168.204.128",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:21.975795"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:25.107165"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/exec/"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:25.116471"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:25.147889"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "password_current",
+          "type": "query",
+          "location": "query",
+          "example_value": "password123",
+          "required": true
+        },
+        {
+          "name": "password_new",
+          "type": "query",
+          "location": "query",
+          "example_value": "password123",
+          "required": true
+        },
+        {
+          "name": "password_conf",
+          "type": "query",
+          "location": "query",
+          "example_value": "password123",
+          "required": true
+        },
+        {
+          "name": "Change",
+          "type": "query",
+          "location": "query",
+          "example_value": "Change",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "query",
+          "location": "query",
+          "example_value": "cb9f5987a4ae528e99f9cb8c2d7cd61c",
+          "required": true
+        }
+      ],
+      "post_data": null,
+      "headers": {
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:29.879651"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/?password_current=password123&password_new=password123&password_conf=password123&Change=Change&user_token=cb9f5987a4ae528e99f9cb8c2d7cd61c"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:29.932433"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/csrf/?password_current=password123&password_new=password123&password_conf=password123&Change=Change&user_token=cb9f5987a4ae528e99f9cb8c2d7cd61c"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:29.942127"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "query",
+          "location": "query",
+          "example_value": "1",
+          "required": true
+        },
+        {
+          "name": "Submit",
+          "type": "query",
+          "location": "query",
+          "example_value": "Submit",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "query",
+          "location": "query",
+          "example_value": "35cfac22c23e44fd6942a47e3d831e06",
+          "required": true
+        }
+      ],
+      "post_data": null,
+      "headers": {
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:45.640550"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit&user_token=35cfac22c23e44fd6942a47e3d831e06"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:45.689561"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit&user_token=35cfac22c23e44fd6942a47e3d831e06"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:45.707498"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "query",
+          "location": "query",
+          "example_value": "1",
+          "required": true
+        },
+        {
+          "name": "Submit",
+          "type": "query",
+          "location": "query",
+          "example_value": "Submit",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "query",
+          "location": "query",
+          "example_value": "c5c973e6ac5010b0b55e6ac529a6417f",
+          "required": true
+        }
+      ],
+      "post_data": null,
+      "headers": {
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:52.357690"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit&user_token=c5c973e6ac5010b0b55e6ac529a6417f"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:52.410745"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit&user_token=c5c973e6ac5010b0b55e6ac529a6417f"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:52.425847"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "default",
+          "type": "query",
+          "location": "query",
+          "example_value": "English",
+          "required": true
+        }
+      ],
+      "post_data": null,
+      "headers": {
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:20:58.828286"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/?default=English"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:58.875248"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/?default=English"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:20:58.891707"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "query",
+          "location": "query",
+          "example_value": "John Doe",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "query",
+          "location": "query",
+          "example_value": "55eb95e841153e03c8e888a8e807e2aa",
+          "required": true
+        }
+      ],
+      "post_data": null,
+      "headers": {
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:21:06.278443"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/?name=John+Doe&user_token=55eb95e841153e03c8e888a8e807e2aa"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:21:06.316336"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/?name=John+Doe&user_token=55eb95e841153e03c8e888a8e807e2aa"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:21:06.329795"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "method": "POST",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "txtName",
+          "type": "form",
+          "location": "body",
+          "example_value": "John Doe",
+          "required": true
+        },
+        {
+          "name": "mtxMessage",
+          "type": "form",
+          "location": "body",
+          "example_value": "Hello World",
+          "required": true
+        },
+        {
+          "name": "btnSign",
+          "type": "form",
+          "location": "body",
+          "example_value": "Sign Guestbook",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "form",
+          "location": "body",
+          "example_value": "e750f6b6637cbef30fda42559d5b8f58",
+          "required": true
+        }
+      ],
+      "post_data": "txtName=John+Doe&mtxMessage=Hello+World&btnSign=Sign+Guestbook&user_token=e750f6b6637cbef30fda42559d5b8f58",
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "origin": "http://192.168.204.128",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:21:12.755187"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:21:12.976499"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:21:12.994316"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/security.php",
+      "method": "POST",
+      "request_type": "document",
+      "parameters": [
+        {
+          "name": "security",
+          "type": "form",
+          "location": "body",
+          "example_value": "low",
+          "required": true
+        },
+        {
+          "name": "seclev_submit",
+          "type": "form",
+          "location": "body",
+          "example_value": "Submit",
+          "required": true
+        },
+        {
+          "name": "user_token",
+          "type": "form",
+          "location": "body",
+          "example_value": "c17d248a15d3764c4183ad01d15cd287",
+          "required": true
+        }
+      ],
+      "post_data": "security=low&seclev_submit=Submit&user_token=c17d248a15d3764c4183ad01d15cd287",
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "origin": "http://192.168.204.128",
+        "referer": "http://192.168.204.128/dvwa/security.php",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 302,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:21:31.878986"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/security.php",
+      "method": "GET",
+      "request_type": "document",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "origin": "http://192.168.204.128",
+        "referer": "http://192.168.204.128/dvwa/security.php",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "response_status": 200,
+      "response_type": "html",
+      "timestamp": "2025-10-22T16:21:31.892636"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/dvwaPage.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/security.php"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:21:31.937175"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/dvwa/js/add_event_listeners.js",
+      "method": "GET",
+      "request_type": "script",
+      "parameters": [],
+      "post_data": null,
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "referer": "http://192.168.204.128/dvwa/security.php"
+      },
+      "response_status": 200,
+      "response_type": "text",
+      "timestamp": "2025-10-22T16:21:31.952745"
+    }
+  ],
+  "injection_points": [
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/setup.php#",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "b016cfdfe9074e2b2785c9c0431a5a13"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/#",
+      "parameter": "username",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=text",
+      "test_value": "admin"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/#",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "da0788c98bee551f79189359c8bd0503"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "parameter": "username",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "admin"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "parameter": "password",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "password123"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "parameter": "Login",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "Login"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "da0788c98bee551f79189359c8bd0503"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/#",
+      "parameter": "ip",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=text",
+      "test_value": "127.0.0.1"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/#",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "d2fcbd97fedaa9bd822b58ad4dc05a9a"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "parameter": "ip",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "127.0.0.1"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "parameter": "Submit",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "Submit"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "d2fcbd97fedaa9bd822b58ad4dc05a9a"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/#",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "cb9f5987a4ae528e99f9cb8c2d7cd61c"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "parameter": "password_current",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "password123"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "parameter": "password_new",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "password123"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "parameter": "password_conf",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "password123"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "parameter": "Change",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "Change"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "cb9f5987a4ae528e99f9cb8c2d7cd61c"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/#",
+      "parameter": "MAX_FILE_SIZE",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "100000"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/#",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "7ed05dbcd54885fe6763e586859f2bbd"
+    },
+    {
+      "type": "file_upload",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/#",
+      "parameter": "uploaded",
+      "method": "POST",
+      "context": "form_id=form_0, enctype=multipart/form-data",
+      "test_value": "test.txt"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/#",
+      "parameter": "id",
+      "method": "GET",
+      "context": "form_id=ref: <Node>, field_type=text",
+      "test_value": "1"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/#",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "form_id=ref: <Node>, field_type=hidden",
+      "test_value": "35cfac22c23e44fd6942a47e3d831e06"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "parameter": "id",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "1"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "parameter": "Submit",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "Submit"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "35cfac22c23e44fd6942a47e3d831e06"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/#",
+      "parameter": "id",
+      "method": "GET",
+      "context": "form_id=ref: <Node>, field_type=text",
+      "test_value": "1"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/#",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "form_id=ref: <Node>, field_type=hidden",
+      "test_value": "c5c973e6ac5010b0b55e6ac529a6417f"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "parameter": "id",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "1"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "parameter": "Submit",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "Submit"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "c5c973e6ac5010b0b55e6ac529a6417f"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "parameter": "default",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "English"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/#",
+      "parameter": "name",
+      "method": "GET",
+      "context": "form_id=form_0, field_type=text",
+      "test_value": "John Doe"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/#",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "55eb95e841153e03c8e888a8e807e2aa"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "parameter": "name",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "John Doe"
+    },
+    {
+      "type": "url_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "parameter": "user_token",
+      "method": "GET",
+      "context": "request_type=document, param_type=query",
+      "test_value": "55eb95e841153e03c8e888a8e807e2aa"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "parameter": "txtName",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=text",
+      "test_value": "John Doe"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "parameter": "mtxMessage",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=textarea",
+      "test_value": "Hello World"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "e750f6b6637cbef30fda42559d5b8f58"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "parameter": "txtName",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "John Doe"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "parameter": "mtxMessage",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "Hello World"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "parameter": "btnSign",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "Sign Guestbook"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "e750f6b6637cbef30fda42559d5b8f58"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "parameter": "token",
+      "method": "GET",
+      "context": "form_id=form_0, field_type=textarea",
+      "test_value": "{\"token\":\"kwD2VWDBMErkRI1C8pncAFiy9KVbG6rK\",\"iv\":\"KbydwdheZ4a+MubJ\"}"
+    },
+    {
+      "type": "form",
+      "url": "http://192.168.204.128/dvwa/security.php#",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "form_id=form_0, field_type=hidden",
+      "test_value": "c17d248a15d3764c4183ad01d15cd287"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/security.php",
+      "parameter": "security",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "low"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/security.php",
+      "parameter": "seclev_submit",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "Submit"
+    },
+    {
+      "type": "post_param",
+      "url": "http://192.168.204.128/dvwa/security.php",
+      "parameter": "user_token",
+      "method": "POST",
+      "context": "param_type=form, content_type=application/x-www-form-urlencoded",
+      "test_value": "c17d248a15d3764c4183ad01d15cd287"
+    }
+  ],
+  "security_reports": [
+    {
+      "url": "http://192.168.204.128/dvwa/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "uvb2gkqv4pdhk44ho6lu...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:02.833470"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/instructions.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "uvb2gkqv4pdhk44ho6lu...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:05.155816"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/setup.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "uvb2gkqv4pdhk44ho6lu...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:09.371451"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/brute/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:18.149539"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/exec/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:26.044665"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csrf/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:33.612110"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=include.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:35.655911"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/upload/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:41.781477"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:48.203209"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/sqli_blind/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:54.842428"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/weak_id/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:20:56.991830"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_d/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:02.367320"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_r/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:08.754414"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/xss_s/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:14.816078"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/csp/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:16.928172"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/javascript/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:19.044347"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/authbypass/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:21.459866"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:23.606966"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/cryptography/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:25.758354"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/api/",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "security",
+          "value": "impossible",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": true,
+          "secure": false,
+          "sameSite": "Strict"
+        }
+      ],
+      "vulnerable_cookies": [],
+      "js_accessible_cookies": "",
+      "timestamp": "2025-10-22T16:21:28.045200"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/security.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:34.818321"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/phpinfo.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:37.052542"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/about.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:39.227539"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/instructions.php?doc=readme",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:41.304628"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/instructions.php?doc=PDF",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:43.515259"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/instructions.php?doc=changelog",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:45.690684"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/instructions.php?doc=copying",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:47.892676"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.ar.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:50.082400"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.zh.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:52.256325"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.fr.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:54.378988"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.ko.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:56.492405"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.fa.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:21:58.666190"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.pl.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:00.805198"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.pt.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:02.965780"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.es.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:05.059611"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.tr.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:07.192841"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.id.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:09.299436"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.vi.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:11.340934"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/README.it.md",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:13.384097"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file1.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:15.524608"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file2.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:17.556273"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file3.php",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:19.580240"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/source/impossible.php?redirect=1",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:21.612259"
+    },
+    {
+      "url": "http://192.168.204.128/dvwa/vulnerabilities/open_redirect/source/impossible.php?redirect=2",
+      "csp": null,
+      "csp_source": null,
+      "csp_parsed": {},
+      "csp_issues": [
+        "CSP 미설정 - XSS 공격 방어 없음"
+      ],
+      "security_headers": {},
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        },
+        {
+          "name": "security",
+          "value": "low",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "vulnerable_cookies": [
+        {
+          "name": "PHPSESSID",
+          "value": "jgdiueg7j8h6qdtnr8ob...",
+          "domain": "192.168.204.128",
+          "path": "/",
+          "httpOnly": false,
+          "secure": false,
+          "sameSite": "Lax"
+        }
+      ],
+      "js_accessible_cookies": "PHPSESSID=jgdiueg7j8h6qdtnr8obt6k9r7; security=low",
+      "timestamp": "2025-10-22T16:22:23.654483"
+    }
+  ],
+  "sensitive_data": [
+    {
+      "data_type": "internal_ip",
+      "value": "192.168.204.128",
+      "location": "body",
+      "context": "Internal IP: 192.168.204.128",
+      "page_url": "http://192.168.204.128/dvwa/setup.php",
+      "confidence": 0.9
+    },
+    {
+      "data_type": "email",
+      "value": "license@php.net",
+      "location": "p",
+      "context": "If you did not receive a copy of the PHP license, or have any questions about PHP licensing, please ",
+      "page_url": "http://192.168.204.128/dvwa/phpinfo.php",
+      "confidence": 0.95
+    },
+    {
+      "data_type": "ssn",
+      "value": "000000-*******",
+      "location": "body",
+      "context": "SSN: 000000-*******",
+      "page_url": "http://192.168.204.128/dvwa/phpinfo.php",
+      "confidence": 0.8
+    },
+    {
+      "data_type": "internal_ip",
+      "value": "192.168.204.128",
+      "location": "body",
+      "context": "Internal IP: 192.168.204.128",
+      "page_url": "http://192.168.204.128/dvwa/phpinfo.php",
+      "confidence": 0.9
+    },
+    {
+      "data_type": "internal_ip",
+      "value": "192.168.204.1",
+      "location": "body",
+      "context": "Internal IP: 192.168.204.1",
+      "page_url": "http://192.168.204.128/dvwa/phpinfo.php",
+      "confidence": 0.9
+    },
+    {
+      "data_type": "internal_ip",
+      "value": "192.168.204.1",
+      "location": "body",
+      "context": "Internal IP: 192.168.204.1",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file1.php",
+      "confidence": 0.9
+    },
+    {
+      "data_type": "internal_ip",
+      "value": "192.168.204.128",
+      "location": "body",
+      "context": "Internal IP: 192.168.204.128",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file3.php",
+      "confidence": 0.9
+    },
+    {
+      "data_type": "internal_ip",
+      "value": "192.168.204.1",
+      "location": "body",
+      "context": "Internal IP: 192.168.204.1",
+      "page_url": "http://192.168.204.128/dvwa/vulnerabilities/fi/?page=file3.php",
+      "confidence": 0.9
+    }
+  ],
+  "errors": [
+    "페이지 로드 실패: http://192.168.204.128/dvwa/config/config.inc.php.dist",
+    "페이지 로드 실패: http://192.168.204.128/dvwa/compose.yml"
+  ]
+}
